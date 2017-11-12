@@ -1,0 +1,38 @@
+/*make humburger default*/
+@media (max-width: 3000px){
+#et_mobile_nav_menu {
+display: block;
+}
+#top-menu {
+display: none;
+}
+}
+/*now we want the work menu shown with the hamburgwr menu*/    
+	
+	.mobile_menu_bar:before {
+            background-color: #3e4555;
+            padding: 2px 0px 2px 2px;
+            top: 9px;
+            color: #fff!important;}
+    .mobile_menu_bar::after {
+            font-family: Arial;
+            content: "MENU";
+            position: relative;
+            padding: 10px 20px 10px 5px;
+            background-color: #3e4555;
+            color: #FFFFFF!important;
+        cursor: pointer;}
+    .mobile_nav.opened .mobile_menu_bar:before {
+        content: "\4d";}
+
+#main-header{padding-bottom:18px;}
+@media only screen and (max-width: 980px){
+.et_header_style_centered #main-header .mobile_nav {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+}
+}
+.select_page { visibility: hidden; }
